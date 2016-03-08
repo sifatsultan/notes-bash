@@ -78,3 +78,31 @@ echo ${name[66]} #curly bracket and the dollar
 names2= ([12]="Jimbo" [66]="Joe" [32]="John") #specific index
 ```
 
+##iteration
+
+```python
+#!/bin/bash
+for (( i=1 ; i<=5 ; i++ )) #take care of the exact spacing
+do
+  echo $i
+done
+
+for i in 1 2 3 4 5 6 7 8 9 10 11 12 100 #nutcase
+do
+  echo $i
+done
+
+for i in seq 0 5 20 #did not actually work for me
+do
+  echo $i
+done
+
+for i in $(ls) #the list dont have to be always number
+do
+  echo $i
+done
+
+
+```
+
+
