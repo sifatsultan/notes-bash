@@ -102,7 +102,33 @@ do
   echo $i
 done
 
+```
+
+##functions
+```python
+showtime() ##no need for the "def" or "function" before it. The "()" does the job
+{
+        echo `date +"%1:%M%P"`
+        return #need to mention the return
+}
+showtime #no need of the brackets to call the func
+```
+
+##internal variables
+```python
+$BASH_VERSION #got to be captial letters
+$BASH_UID #id can be pretty useless
+$FUNCNAME #its func not function
+$HOME #home directory
+$HOSTTYPE #integrated chips stuff
+$OSTYPE #linux or ms
+$PWD #pretty handy
+$SECONDS #has got to be in micro sec
+$LINENO #for debuggin i guess
 
 ```
+
+
+
 
 
